@@ -1,4 +1,4 @@
-let csvToJson = function(csvStr, userOptions) {
+export let csvToJson = function(csvStr, userOptions) {
 	if (typeof csvStr !== 'string') return null;
 
 	let options = { header : 0, columnName : [], ignoreBlankLine : true };
@@ -38,15 +38,3 @@ let csvToJson = function(csvStr, userOptions) {
 
 	return json;
 };
-fetch('./custom.csv')
-    .then( (res)=>{
-        return res.text();
-    })
-    .then((text)=>{
-        console.log(text);
-        let jsonObj = csvToJson(text, {
-	        header     : 1,
-	        columnName : ['id', '上', '中','下',]
-        });
-        console.log(jsonObj);
-    });

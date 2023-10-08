@@ -1,3 +1,13 @@
-id,上,中,下,file_name,item_id
+id,top,center,under,file_name,shop_item_id
 001,up01,center01,down01,001.jpg,item_id001
 002,up01,center01,down02,002.jpg,item_id002
+003,up01,center01,down03,003.jpg,item_id003
+004,up01,center02,down01,004.jpg,item_id004
+005,up01,center02,down02,005.jpg,item_id005
+006,up01,center02,down03,006.jpg,item_id006
+007,up02,center01,down01,007.jpg,item_id007
+008,up02,center01,down02,008.jpg,item_id008
+009,up02,center01,down03,009.jpg,item_id009
+010,up02,center02,down01,010.jpg,item_id010
+011,up02,center02,down02,011.jpg,item_id011
+012,up02,center02,down03,012.jpg,item_id012
