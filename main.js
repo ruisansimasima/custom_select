@@ -73,12 +73,16 @@ import { csvToJson } from './csv.js';
         select03Zone[0].appendChild(label);
     }
 
-    changeImage();
+    changeImage(toplength,centerlength,underlength,JsonObj);
 })();
 
 //メイン画像変更処理
-function changeImage(){
-    console.log("aaaaaa");
+function changeImage(toplength,centerlength,underlength,JsonObj){
+    console.log(toplength);
+    console.log(centerlength);
+    console.log(underlength);
+    console.log(JsonObj);
+
 }
 
 
