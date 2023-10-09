@@ -41,7 +41,7 @@ import { csvToJson } from './csv.js';
     JsonObj.forEach((value)=>{
         underlength.push(value.under);
     });
-    let setUnder = Array.from(new Set(underlength));//重複を除いたcenter
+    let setUnder = Array.from(new Set(underlength));//重複を除いたunder
     let select03Zone = document.getElementsByClassName('select03_zone');
     console.log(setUnder);
     for(let i=0; i<setUnder.length; i++){
