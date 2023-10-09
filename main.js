@@ -15,15 +15,40 @@ import { csvToJson } from './csv.js';
         toplength.push(value.top);
     });
     let setTop = Array.from(new Set(toplength));//重複を除いたtop
-
-    
     let select01Zone = document.getElementsByClassName('select01_zone');
-    console.log(setTop);
-    for(let i=0 ; i<setTop.length; i++){
+    for(let i=0; i<setTop.length; i++){
         let input = document.createElement('input');
         input.setAttribute("type","radio");
         input.setAttribute("name","top");
         select01Zone[0].appendChild(input);
+    }
+
+    let centerlength = [];
+    JsonObj.forEach((value)=>{
+        centerlength.push(value.center);
+    });
+    let setCenter = Array.from(new Set(centerlength));//重複を除いたcenter
+    let select02Zone = document.getElementsByClassName('select02_zone');
+    console.log(setCenter);
+    for(let i=0; i<setCenter.length; i++){
+        let input = document.createElement('input');
+        input.setAttribute("type","radio");
+        input.setAttribute("name","center");
+        select02Zone[0].appendChild(input);
+    }
+
+    let underlength = [];
+    JsonObj.forEach((value)=>{
+        underlength.push(value.under);
+    });
+    let setUnder = Array.from(new Set(underlength));//重複を除いたcenter
+    let select03Zone = document.getElementsByClassName('select03_zone');
+    console.log(setUnder);
+    for(let i=0; i<setUnder.length; i++){
+        let input = document.createElement('input');
+        input.setAttribute("type","radio");
+        input.setAttribute("name","under");
+        select03Zone[0].appendChild(input);
     }
 
 })();
